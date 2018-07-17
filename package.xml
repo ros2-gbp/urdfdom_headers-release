@@ -13,7 +13,6 @@
 
   <buildtool_depend>cmake</buildtool_depend>
 
-  <depend>boost</depend>
   <depend>console_bridge</depend>
   <depend>tinyxml</depend>
 
