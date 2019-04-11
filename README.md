@@ -1,3 +1,26 @@
+## urdfdom_headers (dashing) - 1.0.3-1
+
+The packages in the `urdfdom_headers` repository were released into the `dashing` distro by running `/home/steven/osrf/bloom/myscripts/py3env/bin/bloom-release -n -r dashing urdfdom_headers --override-release-repository-push-url git@github.com:ros2-gbp/urdfdom_headers-release` on `Thu, 11 Apr 2019 20:51:49 -0000`
+
+The `urdfdom_headers` package was released.
+
+Version of package(s) in repository `urdfdom_headers`:
+
+- upstream repository: https://github.com/ros/urdfdom_headers.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0.dev2`
+- catkin_pkg version: `0.4.11`
+- rosdep version: `0.15.1`
+- rosdistro version: `0.7.3`
+- vcstools version: `0.1.40`
+
+
 ## urdfdom_headers (crystal) - 1.0.2-1
 
 The packages in the `urdfdom_headers` repository were released into the `crystal` distro by running `/usr/bin/bloom-release -r crystal urdfdom_headers --override-release-repository-push-url git@github.com:ros2-gbp/urdfdom_headers-release` on `Mon, 19 Nov 2018 21:27:00 -0000`
