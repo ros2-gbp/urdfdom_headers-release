@@ -1,3 +1,26 @@
+## urdfdom_headers (eloquent) - 1.0.4-1
+
+The packages in the `urdfdom_headers` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release -n -r eloquent urdfdom_headers --override-release-repository-push-url git@github.com:ros2-gbp/urdfdom_headers-release` on `Tue, 17 Sep 2019 17:11:40 -0000`
+
+The `urdfdom_headers` package was released.
+
+Version of package(s) in repository `urdfdom_headers`:
+
+- upstream repository: https://github.com/ros/urdfdom_headers.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.42`
+
+
 ## urdfdom_headers (dashing) - 1.0.4-1
 
 The packages in the `urdfdom_headers` repository were released into the `dashing` distro by running `/usr/bin/bloom-release -r dashing urdfdom_headers --override-release-repository-push-url git@github.com:ros2-gbp/urdfdom_headers-release` on `Tue, 21 May 2019 05:14:19 -0000`
