@@ -5,7 +5,7 @@ include(GNUInstallDirs)
 
 set (URDF_MAJOR_VERSION 1)
 set (URDF_MINOR_VERSION 0)
-set (URDF_PATCH_VERSION 4)
+set (URDF_PATCH_VERSION 5)
 
 set (URDF_VERSION ${URDF_MAJOR_VERSION}.${URDF_MINOR_VERSION}.${URDF_PATCH_VERSION})
 
@@ -26,8 +26,9 @@ add_subdirectory(urdf_exception)
 if(WIN32 AND NOT CYGWIN)
   set(CMAKE_CONFIG_INSTALL_DIR CMake)
 else()
-  set(CMAKE_CONFIG_INSTALL_DIR ${CMAKE_INSTALL_FULL_LIBDIR}/${PROJECT_NAME}/cmake/)
+  set(CMAKE_CONFIG_INSTALL_DIR ${CMAKE_INSTALL_LIBDIR}/${PROJECT_NAME}/cmake)
 endif()
+string(REGEX REPLACE "[^/]+" ".." RELATIVE_PATH_CMAKE_DIR_TO_PREFIX "${CMAKE_CONFIG_INSTALL_DIR}")
 
 set(PACKAGE_NAME ${PROJECT_NAME})
 set(cmake_conf_file "${PROJECT_NAME}-config.cmake")
@@ -52,8 +53,19 @@ if (NOT MSVC)
   set(PACKAGE_DESC "Unified Robot Description Format")
   set(pkg_conf_file "urdfdom_headers.pc")
   configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/pkgconfig/${pkg_conf_file}.in" "${CMAKE_BINARY_DIR}/${pkg_conf_file}" @ONLY)
-  install(FILES "${CMAKE_BINARY_DIR}/${pkg_conf_file}" DESTINATION lib/pkgconfig/ COMPONENT pkgconfig)
+  install(FILES "${CMAKE_BINARY_DIR}/${pkg_conf_file}" DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig/ COMPONENT pkgconfig)
 endif()
+
+add_library(${PROJECT_NAME} INTERFACE)
+target_include_directories(${PROJECT_NAME} INTERFACE
+  "$<INSTALL_INTERFACE:include>")
+install(TARGETS ${PROJECT_NAME} EXPORT ${PROJECT_NAME})
+install(
+  EXPORT ${PROJECT_NAME}
+  DESTINATION ${CMAKE_CONFIG_INSTALL_DIR}
+  NAMESPACE "${PROJECT_NAME}::"
+  FILE "${PROJECT_NAME}Export.cmake"
+)
 
 # Add uninstall target
 # Ref: http://www.cmake.org/Wiki/CMake_FAQ#Can_I_do_.22make_uninstall.22_with_CMake.3F
