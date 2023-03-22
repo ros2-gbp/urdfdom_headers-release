@@ -269,4 +269,5 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://github.com/ros/urdfdom_headers.git
-    version: :{ask}
+    version: 1.1.0
+    version_saved: :{ask}
