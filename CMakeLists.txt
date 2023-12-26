@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 2.8.12 FATAL_ERROR )
+cmake_minimum_required( VERSION 3.8 FATAL_ERROR )
 project (urdfdom_headers)
 
 include(GNUInstallDirs)
@@ -14,7 +14,7 @@ endif()
 
 set (URDF_MAJOR_VERSION 1)
 set (URDF_MINOR_VERSION 1)
-set (URDF_PATCH_VERSION 0)
+set (URDF_PATCH_VERSION 1)
 
 set (URDF_VERSION ${URDF_MAJOR_VERSION}.${URDF_MINOR_VERSION}.${URDF_PATCH_VERSION})
 
@@ -54,12 +54,10 @@ install(FILES
   DESTINATION ${CMAKE_CONFIG_INSTALL_DIR} COMPONENT cmake)
 
 # Make the package config file
-if (NOT MSVC)
-  set(PACKAGE_DESC "Unified Robot Description Format")
-  set(pkg_conf_file "urdfdom_headers.pc")
-  configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/pkgconfig/${pkg_conf_file}.in" "${CMAKE_BINARY_DIR}/${pkg_conf_file}" @ONLY)
-  install(FILES "${CMAKE_BINARY_DIR}/${pkg_conf_file}" DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig/ COMPONENT pkgconfig)
-endif()
+set(PACKAGE_DESC "Unified Robot Description Format")
+set(pkg_conf_file "urdfdom_headers.pc")
+configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/pkgconfig/${pkg_conf_file}.in" "${CMAKE_BINARY_DIR}/${pkg_conf_file}" @ONLY)
+install(FILES "${CMAKE_BINARY_DIR}/${pkg_conf_file}" DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig/ COMPONENT pkgconfig)
 
 add_library(${PROJECT_NAME} INTERFACE)
 target_include_directories(${PROJECT_NAME} INTERFACE
