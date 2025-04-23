@@ -273,8 +273,7 @@ tracks:
     ros_distro: kilted
     vcs_type: git
     vcs_uri: https://github.com/ros/urdfdom_headers.git
-    version: 1.1.1
-    version_saved: :{ask}
+    version: :{ask}
   r2b2:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
