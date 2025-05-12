@@ -1,3 +1,26 @@
+## urdfdom_headers (kilted) - 1.1.2-1
+
+The packages in the `urdfdom_headers` repository were released into the `kilted` distro by running `/home/cottsay/infra_ws/install/bloom/bin/bloom-release urdfdom_headers -r kilted` on `Mon, 12 May 2025 23:02:02 -0000`
+
+The `urdfdom_headers` package was released.
+
+Version of package(s) in repository `urdfdom_headers`:
+
+- upstream repository: https://github.com/ros/urdfdom_headers.git
+- release repository: https://github.com/ros2-gbp/urdfdom_headers-release.git
+- rosdistro version: `1.1.1-3`
+- old version: `1.1.1-3`
+- new version: `1.1.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## urdfdom_headers (jazzy) - 1.1.2-1
 
 The packages in the `urdfdom_headers` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --track jazzy --rosdistro jazzy urdfdom_headers` on `Wed, 11 Sep 2024 21:50:40 -0000`
