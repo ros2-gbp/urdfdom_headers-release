@@ -340,7 +340,7 @@ tracks:
     devel_branch: master
     last_version: 1.1.1
     name: urdfdom_headers
-    patches: foxy
+    patches: null
     release_inc: '2'
     release_repo_url: https://github.com/ros2-gbp/urdfdom_headers-release.git
     release_tag: :{version}
