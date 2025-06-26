@@ -337,10 +337,10 @@ tracks:
       :{release_inc} --os-name fedora
     - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
       :{release_inc} --os-name rhel
-    devel_branch: master
+    devel_branch: rolling
     last_version: 1.1.1
     name: urdfdom_headers
-    patches: foxy
+    patches: null
     release_inc: '2'
     release_repo_url: https://github.com/ros2-gbp/urdfdom_headers-release.git
     release_tag: :{version}
