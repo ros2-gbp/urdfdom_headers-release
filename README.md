@@ -1,3 +1,26 @@
+## urdfdom_headers (rolling) - 2.1.0-1
+
+The packages in the `urdfdom_headers` repository were released into the `rolling` distro by running `/usr/local/google/home/scpeters/ws/venv_bloom/bin/bloom-release --rosdistro rolling urdfdom_headers` on `Mon, 02 Feb 2026 21:41:03 -0000`
+
+The `urdfdom_headers` package was released.
+
+Version of package(s) in repository `urdfdom_headers`:
+
+- upstream repository: https://github.com/ros/urdfdom_headers.git
+- release repository: https://github.com/ros2-gbp/urdfdom_headers-release.git
+- rosdistro version: `2.0.1-1`
+- old version: `2.0.1-1`
+- new version: `2.1.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## urdfdom_headers (rolling) - 2.0.1-1
 
 The packages in the `urdfdom_headers` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling --track rolling urdfdom_headers` on `Fri, 28 Nov 2025 09:44:00 -0000`
