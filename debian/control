@@ -1,0 +1,12 @@
+Source: ros-lyrical-urdfdom-headers
+Section: misc
+Priority: optional
+Maintainer: Steven! Ragnarök <steven@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), cmake, ros-lyrical-ros-workspace
+Homepage: http://ros.org/wiki/urdf
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-urdfdom-headers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-ros-workspace
+Description: C++ headers for URDF.
