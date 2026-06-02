@@ -1,3 +1,26 @@
+## urdfdom_headers (jazzy) - 1.1.3-1
+
+The packages in the `urdfdom_headers` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --track jazzy --rosdistro jazzy urdfdom_headers` on `Tue, 02 Jun 2026 04:37:46 -0000`
+
+The `urdfdom_headers` package was released.
+
+Version of package(s) in repository `urdfdom_headers`:
+
+- upstream repository: https://github.com/ros/urdfdom_headers.git
+- release repository: https://github.com/ros2-gbp/urdfdom_headers-release.git
+- rosdistro version: `1.1.2-1`
+- old version: `1.1.2-1`
+- new version: `1.1.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## urdfdom_headers (rolling) - 3.0.0-1
 
 The packages in the `urdfdom_headers` repository were released into the `rolling` distro by running `/usr/local/google/home/scpeters/ws/venv_bloom/bin/bloom-release --rosdistro rolling urdfdom_headers` on `Mon, 20 Apr 2026 21:50:23 -0000`
