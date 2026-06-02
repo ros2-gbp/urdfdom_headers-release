@@ -50,7 +50,7 @@ namespace urdf{
 class Geometry
 {
 public:
-  enum {SPHERE, BOX, CYLINDER, MESH, CAPSULE} type;
+  enum {SPHERE, BOX, CYLINDER, MESH} type;
 
   virtual ~Geometry(void)
   {
@@ -109,20 +109,6 @@ public:
     scale.x = 1;
     scale.y = 1;
     scale.z = 1;
-  };
-};
-
-class Capsule : public Geometry
-{
-public:
-  Capsule() { this->clear(); type = CAPSULE; };
-  double length;
-  double radius;
-
-  void clear()
-  {
-    length = 0;
-    radius = 0;
   };
 };
 

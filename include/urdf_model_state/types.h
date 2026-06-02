@@ -34,18 +34,18 @@
 
 /* Author: Steve Peters */
 
-#ifndef URDF_WORLD_TYPES_H
-#define URDF_WORLD_TYPES_H
+#ifndef URDF_MODEL_STATE_TYPES_H
+#define URDF_MODEL_STATE_TYPES_H
 
 #include <memory>
 
 
 namespace urdf{
 
-class ModelInterface;
+class JointState;
 
 // typedef shared pointers
-typedef std::shared_ptr<ModelInterface> ModelInterfaceSharedPtr;
+typedef std::shared_ptr<JointState> JointStateSharedPtr;
 
 }
 
