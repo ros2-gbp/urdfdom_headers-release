@@ -32,21 +32,9 @@
 *  POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************/
 
-/* Author: Steve Peters */
-
 #ifndef URDF_WORLD_TYPES_H
 #define URDF_WORLD_TYPES_H
 
-#include <memory>
-
-
-namespace urdf{
-
-class ModelInterface;
-
-// typedef shared pointers
-typedef std::shared_ptr<ModelInterface> ModelInterfaceSharedPtr;
-
-}
+#include <urdf_world/types.hpp>
 
 #endif
